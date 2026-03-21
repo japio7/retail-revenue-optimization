@@ -3,11 +3,30 @@
 ---
 
 ## 🔍 Overview
-This project applies machine learning to optimize retail pricing strategy and maximize revenue by identifying price–demand relationships.
+This project builds a machine learning-driven pricing strategy to identify the optimal price point that maximizes revenue.
 
-By modeling how demand responds to price changes, this project demonstrates how data-driven pricing decisions can improve business performance.
+Using historical retail transaction data, a demand model was developed to simulate how changes in price impact customer purchasing behavior.
+
+The analysis identifies a revenue-maximizing price and demonstrates how data-driven pricing decisions can significantly improve business performance.
 
 ---
+
+## 📌 Executive Summary
+
+A machine learning model was developed to estimate demand as a function of price and historical purchasing behavior.
+
+By simulating demand across different price points, the analysis identified an optimal price of **$2.53**, which maximizes revenue at approximately **$4,176**.
+
+Compared to baseline pricing, this approach demonstrates how retailers can systematically improve pricing decisions using predictive analytics rather than intuition.
+
+This project highlights the value of:
+- Demand forecasting
+- Scenario simulation
+- Data-driven decision making
+
+These techniques are directly applicable to real-world pricing optimization and revenue strategy.
+
+___
 
 ## 🎯 Business Problem
 Retailers must balance price and demand:
@@ -32,17 +51,14 @@ Created features to capture demand patterns:
 - Seasonal features (month, year)
 - Product-level encoding (StockCode)
 
----
-
 ### 3. Modeling
 - Model: Random Forest Regressor  
 - Target: Units Sold  
 
 **Performance:**
 - MAE: 367.73  
-- R²: 0.73  
+- R²: 0.73
 
----
 
 ### 4. Price Simulation
 Demand was simulated across a range of prices using the trained model.
@@ -55,9 +71,16 @@ Revenue was calculated as:
 
 ## 📈 Key Results
 
-- **Optimal Price:** $2.53  
-- **Predicted Demand:** ~1651 units  
-- **Maximum Revenue:** ~$4,176  
+| Metric | Value |
+|------|------|
+| Optimal Price | $2.53 |
+| Predicted Demand | ~1651 units |
+| Maximum Revenue | ~$4,176 |
+
+### Interpretation
+- Revenue increases with price up to an optimal point, after which demand drops sharply
+- The relationship between price and demand is non-linear
+- Small pricing changes can have a significant impact on total revenue
 
 ---
 
@@ -66,6 +89,17 @@ Revenue was calculated as:
 ![Revenue Curve](images/revenue_optimization_curve.png)
 
 ---
+
+## 🤖 Model Selection
+
+A Random Forest Regressor was selected due to its ability to capture non-linear relationships between price and demand.
+
+Future improvements include:
+- Comparing performance with Linear Regression and Gradient Boosting
+- Hyperparameter tuning
+- Cross-validation for robustness
+
+___
 
 ## 💡 Key Insights
 
@@ -102,9 +136,19 @@ This approach enables:
 
 ---
 
+## 🧪 Scenario Analysis
+
+This model enables simulation of different pricing strategies before implementation.
+
+Businesses can use this approach to:
+- Test pricing scenarios without real-world risk
+- Adjust prices dynamically based on demand patterns
+- Improve revenue predictability
+
+___
+
 ## 📂 Project Structure
 ```
-
 retail-revenue-optimization/
 │
 ├── README.md
@@ -140,11 +184,9 @@ retail-revenue-optimization/
 
 1. Clone the repository:
 - git clone https://github.com/japio7/Reports/retail-pricing-optimization.git
----
 
 2. Install dependencies:
 - pip install -r requirements.txt
-___
 
 3. Run notebooks in order:
 - 01_data_cleaning
