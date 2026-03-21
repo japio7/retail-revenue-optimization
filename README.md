@@ -1,12 +1,9 @@
 # 📊 Retail Revenue Optimization
 
-## 🚀 Quick Start
-Run `04_price_simulation.ipynb` to see the revenue optimization model in action.
-
 ---
 
 ## 🔍 Overview
-This project uses machine learning to predict product demand and simulate pricing strategies to identify the optimal price that maximizes revenue.
+This project applies machine learning to optimize retail pricing strategy and maximize revenue by identifying price–demand relationships.
 
 By modeling how demand responds to price changes, this project demonstrates how data-driven pricing decisions can improve business performance.
 
