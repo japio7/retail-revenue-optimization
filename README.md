@@ -25,6 +25,7 @@ This project highlights the value of:
 - Data-driven decision making
 
 These techniques are directly applicable to real-world pricing optimization and revenue strategy.
+This approach can be extended to profit optimization, dynamic pricing systems, and real-time decision engines in production environments.
 
 ___
 
@@ -83,14 +84,14 @@ Revenue was calculated as:
 - Small pricing changes can have a significant impact on total revenue
 
 ### Baseline Comparison
-Compared to an average historical price, the optimized pricing strategy shows the potential to increase revenue by identifying a more effective balance between price and demand.
+Compared to an average historical price, the optimized pricing strategy shows the potential to increase revenue by identifying a more effective balance between price and demand. If applied at scale across multiple products, even small pricing improvements could translate into significant revenue gains.
 
 ---
 
 ## 📈💰 Revenue Optimization
 
 This curve shows how revenue changes across different pricing levels,
-highlighting the optimal price point that maximizes profit.
+highlighting the optimal price point that maximizes revenue
 
 ![Revenue Curve](images/revenue_optimization_curve.png)
 
@@ -123,6 +124,7 @@ ___
 - Revenue increases with price up to a peak, then declines as demand drops
 - A small number of features (price and recent demand) drive most of the predictive power
 - Many engineered features contribute minimal additional value
+- This suggests pricing should be treated as a dynamic lever rather than a fixed business decision
 
 ---
 
@@ -152,6 +154,7 @@ In a real-world setting, this approach can be integrated into pricing systems to
 - Use advanced models (XGBoost / LightGBM)
 - Expand to multi-product pricing strategies
 - Deploy as a real-time pricing tool
+- Integrate with real-time data pipelines for continuous model retraining and price updates
 
 ---
 
