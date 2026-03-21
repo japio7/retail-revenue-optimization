@@ -1,4 +1,4 @@
-# 📊 Retail Revenue Optimization
+# 📊💰 Retail Revenue Optimization
 
 ---
 
@@ -69,7 +69,7 @@ Revenue was calculated as:
 
 ---
 
-## 📈 Key Results
+## 🏆 Key Results
 
 | Metric | Value |
 |------|------|
@@ -82,11 +82,27 @@ Revenue was calculated as:
 - The relationship between price and demand is non-linear
 - Small pricing changes can have a significant impact on total revenue
 
+### Baseline Comparison
+Compared to an average historical price, the optimized pricing strategy shows the potential to increase revenue by identifying a more effective balance between price and demand.
+
 ---
 
-## 📊 Visualization
+## 📈💰 Revenue Optimization
+
+This curve shows how revenue changes across different pricing levels,
+highlighting the optimal price point that maximizes profit.
 
 ![Revenue Curve](images/revenue_optimization_curve.png)
+
+## 📊 Feature Importance
+
+The model identified **price and recent demand trends** as the most influential features.
+
+This indicates:
+- Pricing decisions have a direct and significant impact on demand
+- Recent sales patterns are strong predictors of future demand
+
+![Feature Importance](images/top_10_feature_importance.png)
 
 ---
 
@@ -112,10 +128,13 @@ ___
 
 ## ⚡ Business Impact
 
-This approach enables:
-- Data-driven pricing strategies
-- Revenue optimization through simulation
-- Scenario analysis before implementing pricing changes
+This project demonstrates how retailers can:
+
+- Increase revenue by identifying optimal price points rather than relying on static pricing
+- Reduce revenue loss from underpricing or overpricing products
+- Use predictive models to guide pricing decisions instead of intuition
+
+In a real-world setting, this approach can be integrated into pricing systems to continuously adapt to demand patterns and market conditions.
 
 ---
 
